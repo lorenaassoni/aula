@@ -30,6 +30,11 @@ export default function TabLayout() {
         <Ionicons name={focused ? 'list-circle-sharp' : 'list-circle-outline'} color={color} size={24} />
       ),
       }}/>
+      <Tabs.Screen name="buscaCep" 
+      options={{title: 'Buscar CEP', tabBarIcon: ({color, focused}) => (
+        <Ionicons name={focused ? 'search-circle-sharp' : 'search-circle-outline'} color={color} size={24} />
+      ),
+      }}/>
   </Tabs>
   );
 }

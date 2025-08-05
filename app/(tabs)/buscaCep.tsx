@@ -6,7 +6,7 @@ export default function buscaCep() {
 
   return (
     <View style={styles.container}>
-      <Text>Consulte seu CEP</Text>
+      <Text style={styles.titulo}>Consulte seu CEP</Text>
 
       <TextInput
         style={styles.textInput}
@@ -18,7 +18,7 @@ export default function buscaCep() {
 
       <Text>{cep}</Text>
 
-      <Button
+      <Button color={'rgb(45, 237, 237)'}
         title="Buscar"
         onPress={buscarCEP}
       />
@@ -38,7 +38,7 @@ export default function buscaCep() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#2490ae', 
     alignItems: 'center',
     justifyContent: 'center',
     padding: 10,
@@ -49,6 +49,7 @@ const styles = StyleSheet.create({
     borderColor: 'gray',
     padding: 8,
     marginVertical: 10,
+    backgroundColor: '#E0FFFF',
   },
   resultado: {
     marginTop: 20,
@@ -56,5 +57,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: 'gray',
     borderRadius: 8,
+    backgroundColor: '#E0FFFF',
   },
+  titulo: {fontSize: 28, fontWeight: 'bold', textAlign: 'center', marginBottom: 20, color: '#fff'},
 });
