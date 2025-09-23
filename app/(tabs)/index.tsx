@@ -17,7 +17,7 @@ import domtoimage from 'dom-to-image';
 const PlaceholderImage = require('@/assets/images/imagemsite.png');
 
 export default function Index() {
-  const imageRef = useRef<View>(null);
+  const imageRef = useRef<any>(null);
   const [status, requestPermitission] = MediaLibrary.usePermissions();
   const [selectedImage, setSelectedImage] = useState<string | undefined>(undefined);
   const [showAppOptions, setShowAppOptions] = useState<boolean>(false);
