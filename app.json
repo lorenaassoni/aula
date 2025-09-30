@@ -9,13 +9,18 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "esportesnews",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/icone.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.lorena_assoni.PlayRush"
     },
     "web": {
       "bundler": "metro",
@@ -35,7 +40,10 @@
       ]
     ],
     "experiments": {
-      "typedRoutes": true
+      "typedRoutes": true,
+      "router": {
+        "staticRendering": false
+      }
     },
     "extra": {
       "router": {
